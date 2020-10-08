@@ -1,15 +1,9 @@
-// import { ApolloServer } from 'apollo-server-micro';
+import { ApolloServer } from 'apollo-server-micro';
 
-// import { createContext } from '../../graphql/context';
-// import { schema } from '../../graphql/schema';
+import { createContext } from './graphql/context';
+import { schema } from './graphql/schema';
 
-// export const GRAPHQL_PATH = '/api/graphql';
-const { ApolloServer } = require('apollo-server-micro');
-
-const { createContext } = require('../../graphql/context');
-const { schema } = require('../../graphql/schema');
-
-const GRAPHQL_PATH = '/api/graphql';
+export const GRAPHQL_PATH = '/api/graphql';
 
 // this config block is REQUIRED on Vercel! It stops the body of incoming HTTP requests from being parsed
 export const config = {
