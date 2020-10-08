@@ -1,4 +1,6 @@
 import { ApolloServer } from 'apollo-server-micro';
+// needed so netlify functions install the dependency
+import '@nexus/schema';
 
 import { createContext } from '../../graphql/context';
 import { schema } from '../../graphql/schema';
