@@ -1,7 +1,8 @@
 import { ApolloServer } from 'apollo-server-micro';
 
-import { createContext } from './graphql/context';
-import { schema } from './graphql/schema';
+import { createContext } from '../../graphql/context';
+import { schema } from '../../graphql/schema';
+require('@nexus/schema');
 
 export const GRAPHQL_PATH = '/api/graphql';
 
