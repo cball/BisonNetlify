@@ -57,7 +57,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hook-form": "^6.1.0",
-    "universal-cookie": "^4.0.3"
+    "universal-cookie": "^4.0.3",
+    "gql": "file:graphql"
   },
   "devDependencies": {
     "@apollo/react-testing": "^4.0.0",

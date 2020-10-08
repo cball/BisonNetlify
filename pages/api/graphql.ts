@@ -1,10 +1,14 @@
 import { ApolloServer } from 'apollo-server-micro';
-
-import { createContext } from '../../graphql/context';
-import { schema } from '../../graphql/schema';
-require('@nexus/schema');
+// import { createContext } from '../../graphql/context';
+// import { schema } from '../../graphql/schema';
+import { createContext } from 'gql/context';
+import { schema } from 'gql/schema';
 
 export const GRAPHQL_PATH = '/api/graphql';
+
+// IMPORT DOESN"T WORK RIGHT.
+// Tried require()
+// looks like requiring files outside of dir is the issue.
 
 // this config block is REQUIRED on Vercel! It stops the body of incoming HTTP requests from being parsed
 export const config = {
