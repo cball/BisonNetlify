@@ -1,13 +1,15 @@
-import { ApolloServer } from 'apollo-server-micro';
-import { makeSchema } from '@nexus/schema';
+// import { ApolloServer } from 'apollo-server-micro';
 
-import { createContext } from '../../graphql/context';
-import { schema } from '../../graphql/schema';
-// needed so netlify functions install the dependency
+// import { createContext } from '../../graphql/context';
+// import { schema } from '../../graphql/schema';
 
-console.log(makeSchema);
+// export const GRAPHQL_PATH = '/api/graphql';
+const { ApolloServer } = require('apollo-server-micro');
 
-export const GRAPHQL_PATH = '/api/graphql';
+const { createContext } = require('../../graphql/context');
+const { schema } = require('../../graphql/schema');
+
+const GRAPHQL_PATH = '/api/graphql';
 
 // this config block is REQUIRED on Vercel! It stops the body of incoming HTTP requests from being parsed
 export const config = {
