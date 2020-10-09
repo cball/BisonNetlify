@@ -16,11 +16,7 @@
     "sourceMap": true,
     "plugins": [{ "name": "nexus/typescript-language-service" }],
     "typeRoots": ["node_modules/@types", "types"],
-    "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "gql/*": ["graphql/*"]
-    }
+    "rootDir": "."
   },
   "include": [".", "next-env.d.ts", "types.ts", "types.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
