@@ -5,6 +5,7 @@
   "scripts": {
     "build": "yarn build:nexus && yarn build:prisma && yarn build:next",
     "build:next": "next build",
+    "build:netlify": "next-on-netlify",
     "build:nexus": "ts-node -P tsconfig.cjs.json --transpile-only graphql/schema.ts",
     "build:prisma": "prisma generate",
     "cypress:run": "cypress run",
@@ -25,7 +26,6 @@
     "g:test:request": "hygen test request --name",
     "g:test:util": "hygen test util --name",
     "lint": "yarn eslint . --ext .ts,.tsx --fix --ignore-pattern tmp",
-    "postbuild": "next-on-netlify",
     "start": "next start -p $PORT",
     "test": "yarn withEnv:test jest --runInBand --watch",
     "test:ci": "yarn withEnv:test jest --runInBand",
