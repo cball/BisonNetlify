@@ -4,7 +4,7 @@ import { createContext } from '../../graphql/context';
 import { schema } from '../../graphql/schema';
 
 // eslint-disable-next-line
-require('node-fetch').default;
+require('@nexus/schema').default;
 
 export const GRAPHQL_PATH = '/api/graphql';
 
